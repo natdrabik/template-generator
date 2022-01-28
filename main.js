@@ -3,7 +3,7 @@ window.addEventListener('load', updateTemplate);
 var inputs = document.querySelectorAll('input');
 var selects = document.querySelectorAll('select');
 var myReset = document.getElementById('reset');
-var codigo = document.getElementById('codigo');
+
 
 for (elInput of inputs) {
   elInput.addEventListener('change', updateTemplate);
@@ -26,6 +26,7 @@ function updateTemplate() {
   var fonteSelect = document.getElementById('fonteSelect').value;
   var textoCor = document.getElementById('textoCor').value;
   var fundoCor = document.getElementById('fundoCor').value;
+  var codigo = document.getElementById('codigo');
   console.log(fonteSelect);
   
 var styleBorda = 'max-width: 700px; width: 100%; display: table; margin: 0 auto; padding: ' + bordaLargura + 'px; background: ' + bordaCor + ';';
