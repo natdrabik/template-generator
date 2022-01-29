@@ -13,7 +13,7 @@ for (elSelect of selects) {
   elSelect.addEventListener('change', updateTemplate);
 }
 
-myReset.addEventListener('click', resetForm);
+// myReset.addEventListener('click', resetForm);
 
 function resetForm() {
   
