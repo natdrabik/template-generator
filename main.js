@@ -7,6 +7,7 @@ var myReset = document.getElementById('reset');
 
 for (elInput of inputs) {
   elInput.addEventListener('change', updateTemplate);
+  elInput.addEventListener('click', test);
 }
 
 for (elSelect of selects) {
@@ -15,9 +16,13 @@ for (elSelect of selects) {
 
 // myReset.addEventListener('click', resetForm);
 
-function resetForm() {
+// function resetForm() {
   
   
+// }
+
+function test() {
+  console.log('teste');
 }
 
 function updateTemplate() {
