@@ -21,6 +21,7 @@ function resetForm() {
 }
 
 function updateTemplate() {
+  console.log('update');
   var bordaLargura = document.getElementById('bordaLargura').value;
   var bordaCor = document.getElementById('bordaCor').value;
   var fonteSelect = document.getElementById('fonteSelect').value;
