@@ -14,13 +14,6 @@ for (elSelect of selects) {
   elSelect.addEventListener('change', updateTemplate);
 }
 
-/* myReset.addEventListener('click', resetForm);
-
-function resetForm() {
-  
-  
- }*/
-
 function test() {
   console.log('teste');
 }
