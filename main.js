@@ -1,6 +1,6 @@
 window.addEventListener('load', updateTemplate);
 
-var inputs = document.querySelectorAll('input');
+var inputs = document.querySelectorAll('.input');
 var selects = document.querySelectorAll('select');
 var myReset = document.getElementById('reset');
 
