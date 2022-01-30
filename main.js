@@ -4,6 +4,8 @@ var inputs = document.querySelectorAll('input');
 var selects = document.querySelectorAll('select');
 var myReset = document.getElementById('reset');
 
+console.log(inputs);
+
 
 for (elInput of inputs) {
   elInput.addEventListener('change', updateTemplate);
