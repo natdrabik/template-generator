@@ -11,8 +11,7 @@
 }
 
 .wrapper {
-  display: grid;
-/*  grid-template-columns: minmax(300px, 1fr) minmax(700px, 1fr);*/
+  display: flex;
   grid-gap: 40px;
   grid-auto-rows:auto;
 }
