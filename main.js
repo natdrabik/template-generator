@@ -4,13 +4,15 @@ var inputs = document.querySelectorAll('.input');
 var selects = document.querySelectorAll('select');
 var myReset = document.getElementById('reset');
 
-console.log(inputs);
 
 
 for (elInput of inputs) {
   elInput.addEventListener('change', updateTemplate);
   elInput.addEventListener('click', test);
 }
+
+console.log(inputs);
+
 
 for (elSelect of selects) {
   elSelect.addEventListener('change', updateTemplate);
