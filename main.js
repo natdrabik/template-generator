@@ -4,6 +4,7 @@ var inputs = document.querySelectorAll('input');
 var selects = document.querySelectorAll('select');
 var myReset = document.getElementById('reset');
 var codigo = document.getElementById('codigo');
+var inputsBorda = document.querySelectorAll('.input_borda');
 
 for (elInput of inputs) {
   elInput.addEventListener('change', updateTemplate);
@@ -13,11 +14,20 @@ for (elSelect of selects) {
   elSelect.addEventListener('change', updateTemplate);
 }
 
+for (elInputBorda of inputsBorda) {
+  elInputBorda.addEventListener('change', updateBorda);
+}
+
 myReset.addEventListener('click', resetForm);
 
 function resetForm() {
   
   
+}
+
+function updateBorda() {
+  var bordaLargura = document.getElementById('bordaLargura').value;
+  console.log(bordaLargura);
 }
 
 function updateTemplate() {
