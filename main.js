@@ -22,11 +22,11 @@ function resetForm() {
 
 function updateTemplate() {
   var bordaLargura = document.getElementById('bordaLargura').value;
+  var bordaLargura = document.getElementById('bordaLarguraType').value;
   var bordaCor = document.getElementById('bordaCor').value;
   var fonteSelect = document.getElementById('fonteSelect').value;
   var textoCor = document.getElementById('textoCor').value;
   var fundoCor = document.getElementById('fundoCor').value;
-  console.log(fonteSelect);
   
 var styleBorda = 'max-width: 700px; width: 100%; display: table; margin: 0 auto; padding: ' + bordaLargura + 'px; background: ' + bordaCor + ';';
 
