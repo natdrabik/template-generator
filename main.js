@@ -22,7 +22,7 @@ function resetForm() {
 
 function updateTemplate() {
   var bordaLargura = document.getElementById('bordaLargura').value;
-  var bordaLargura = document.getElementById('bordaLarguraType').value;
+  var bordaLarguraType = document.getElementById('bordaLarguraType').value;
   var bordaCor = document.getElementById('bordaCor').value;
   var fonteSelect = document.getElementById('fonteSelect').value;
   var textoCor = document.getElementById('textoCor').value;
