@@ -1,16 +1,31 @@
 window.addEventListener('load', updateTemplate);
 
+var inputs = document.querySelectorAll('input');
+var selects = document.querySelectorAll('select');
+var myReset = document.getElementById('reset');
+var codigo = document.getElementById('codigo');
 
+for (elInput of inputs) {
+  elInput.addEventListener('change', updateTemplate);
+}
+
+for (elSelect of selects) {
+  elSelect.addEventListener('change', updateTemplate);
+}
+
+myReset.addEventListener('click', resetForm);
+
+function resetForm() {
+  
+  
+}
 
 function updateTemplate() {
-  console.log('update');
-  
   var bordaLargura = document.getElementById('bordaLargura').value;
   var bordaCor = document.getElementById('bordaCor').value;
   var fonteSelect = document.getElementById('fonteSelect').value;
   var textoCor = document.getElementById('textoCor').value;
   var fundoCor = document.getElementById('fundoCor').value;
-  var codigo = document.getElementById('codigo');
   console.log(fonteSelect);
   
 var styleBorda = 'max-width: 700px; width: 100%; display: table; margin: 0 auto; padding: ' + bordaLargura + 'px; background: ' + bordaCor + ';';
@@ -26,22 +41,4 @@ var templateHTML = '' + fontStack + '<div style="' + styleBorda + '"><div style=
 var templateBox = document.getElementById('template');
 templateBox.innerHTML = templateHTML;
   codigo.innerHTML = templateHTML;
-}
-
-var inputs = document.querySelectorAll('input');
-var selects = document.querySelectorAll('select');
-var myReset = document.getElementById('reset');
-
-for (elInput of inputs) {
-  elInput.addEventListener('change', updateTemplate);
-}
-
-console.log(inputs);
-
-for (elSelect of selects) {
-  elSelect.addEventListener('change', updateTemplate);
-}
-
-function test() {
-  console.log('teste');
 }
