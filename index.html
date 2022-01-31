@@ -1,37 +1,37 @@
 <!DOCTYPE html>
-<html>
-  <head>
-<title>Gerador</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<link rel="stylesheet" href="style.css">
-<script src="main.js" type="text/javascript"></script>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Generator</title>
+  <link rel="stylesheet" href="style.css">
+
 </head>
-<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
-  <div class="wrapper">
+<body>
+<div class="wrapper">
   <div class="generator">
     <form class="form" id="form">
       <h3>Cores</h3>
       <div class="cores">
         <div class="cor">
         Destaque
-        <input type="color" id="bordaCor" value="#11c7d0" name="bordaCor" class="input" />
+        <input type="color" id="bordaCor" value="#11c7d0" name="bordaCor">
         </div>
         <div class="cor">
         Texto
-        <input type="color" id="textoCor" value="#c9c9c9" name="textoCor" class="input" />
+        <input type="color" id="textoCor" value="#c9c9c9" name="textoCor">
         </div>
         <div class="cor">
         Fundo
-        <input type="color" id="fundoCor" value="#333333" name="fundoCor" class="input" />
+        <input type="color" id="fundoCor" value="#333333" name="fundoCor">
         </div>
       </div>
       <h3>Largura da borda</h3>
       <div class="largura">
-        <input type="range" min="0" max="30" id="bordaLargura" value="20"  name="bordaLargura" class="input" />
+        <input type="range" min="0" max="30" id="bordaLargura" value="20"  name="bordaLargura">
         <!--input type="number" min="0" max="30" id="bordaLarguraType" value="20"  name="bordaLarguraType"-->
       </div>
       <h3>Fonte do título</h3>
-      <select id="fonteSelect" name="fonteSelect" class="input">
+      <select id="fonteSelect"  name="fonteSelect">
          <option>Abril Fatface</option>
          <option>Bebas Neue</option>
          <option>Cookie</option>
@@ -41,7 +41,7 @@
          <option>Playfair Display</option>
          <option>Ubuntu Mono</option>
       </select>
-      <input type="reset" value="Reset" id="reset" name="reset"/>
+      <input type="reset" value="Reset" id="reset" name="reset">
     </form>
   </div>
   <div class="template" id="template">
@@ -51,5 +51,7 @@
     <textarea id="codigo"></textarea>
   </div>
 </div>
-  </body>
+  <script  src="main.js"></script>
+
+</body>
 </html>
