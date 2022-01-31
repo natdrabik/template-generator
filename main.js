@@ -1,22 +1,6 @@
 window.addEventListener('load', updateTemplate);
 
-var inputs = document.querySelectorAll('input');
-var selects = document.querySelectorAll('select');
-var myReset = document.getElementById('reset');
 
-for (elInput of inputs) {
-  elInput.addEventListener('change', updateTemplate);
-}
-
-console.log(inputs);
-
-for (elSelect of selects) {
-  elSelect.addEventListener('change', updateTemplate);
-}
-
-function test() {
-  console.log('teste');
-}
 
 function updateTemplate() {
   console.log('update');
@@ -42,4 +26,22 @@ var templateHTML = '' + fontStack + '<div style="' + styleBorda + '"><div style=
 var templateBox = document.getElementById('template');
 templateBox.innerHTML = templateHTML;
   codigo.innerHTML = templateHTML;
+}
+
+var inputs = document.querySelectorAll('input');
+var selects = document.querySelectorAll('select');
+var myReset = document.getElementById('reset');
+
+for (elInput of inputs) {
+  elInput.addEventListener('change', updateTemplate);
+}
+
+console.log(inputs);
+
+for (elSelect of selects) {
+  elSelect.addEventListener('change', updateTemplate);
+}
+
+function test() {
+  console.log('teste');
 }
