@@ -33,7 +33,9 @@ function enviarForm() {
 
 function updateBorda() {
   var valorBorda = event.target.value;
-  console.log(valorBorda);
+  for (elInputBorda of inputsBorda) {
+  elInputBorda.value = valorBorda;
+}
 }
 
 function updateTemplate() {
