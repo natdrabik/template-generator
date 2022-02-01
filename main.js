@@ -3,6 +3,7 @@ window.addEventListener('load', updateTemplate);
 var inputs = document.querySelectorAll('input');
 var selects = document.querySelectorAll('select');
 var myReset = document.getElementById('reset');
+var submit = document.getElementById('submit');
 var codigo = document.getElementById('codigo');
 var inputsBorda = document.querySelectorAll('.input_borda');
 
@@ -19,10 +20,15 @@ for (elInputBorda of inputsBorda) {
 }
 
 myReset.addEventListener('click', resetForm);
+submit.addEventListener('click', enviarForm);
 
 function resetForm() {
   
   
+}
+
+function enviarForm() {
+  event.prevetDefault();
 }
 
 function updateBorda() {
