@@ -28,7 +28,7 @@ function resetForm() {
 }
 
 function enviarForm() {
-  event.prevetDefault();
+  event.preventDefault();
 }
 
 function updateBorda() {
