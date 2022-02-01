@@ -26,8 +26,8 @@ function resetForm() {
 }
 
 function updateBorda() {
-  var bordaLargura = document.getElementById('bordaLargura').value;
-  document.getElementById('bordaLargura').value = bordaLargura;
+  var valorBorda = event.target.value;
+  console.log(valorBorda);
 }
 
 function updateTemplate() {
