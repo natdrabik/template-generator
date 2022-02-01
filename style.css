@@ -36,12 +36,6 @@ h3 {
   grid-auto-rows:auto;
   justify-content: center;
 }
-.form {
-  max-width: 300px;
-  width: 100%;
-  display: table;
-  margin: 0 auto;
-}
 
 .largura {
   display: flex;
