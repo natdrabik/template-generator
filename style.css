@@ -31,8 +31,10 @@ h3 {
 }
 
 .form_line {
-  display: flex;
-  grid-gap: 30px;
+  display: grid;
+grid-gap: 50px;
+justify-content: space-between;
+grid-template-columns: repeat(2, 1fr);
 }
 
 .wrapper {
