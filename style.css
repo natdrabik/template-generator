@@ -62,6 +62,10 @@ grid-template-columns: repeat(2, 1fr);
   flex-direction: column;
 }
 
+.form_titulo{
+  display: flex;
+}
+
 #bordaLargura {
   width: 100%;
 }
