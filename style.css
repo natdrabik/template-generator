@@ -34,6 +34,11 @@ justify-content: space-between;
 grid-template-columns: repeat(2, 1fr);
 }
 
+.form_group--large {
+  grid-column: span 2;
+  display: flex;
+}
+
 .wrapper {
   display: grid;
   grid-gap: 40px;
