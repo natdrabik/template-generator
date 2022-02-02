@@ -64,6 +64,13 @@ grid-template-columns: repeat(2, 1fr);
 
 .form_titulo{
   display: flex;
+  grid-gap: 20px;
+  justify-content: space-between;
+}
+
+.titulo {
+  display: flex;
+  flex-direction: column;
 }
 
 #bordaLargura {
