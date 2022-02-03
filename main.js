@@ -6,6 +6,7 @@ var myReset = document.getElementById('reset');
 var submit = document.getElementById('submit');
 var codigo = document.getElementById('codigo');
 var inputsBorda = document.querySelectorAll('.input_borda');
+var btDarkmode = document.getElementById('darkmode');
 
 for (elInput of inputs) {
   elInput.addEventListener('change', updateTemplate);
@@ -19,12 +20,11 @@ for (elInputBorda of inputsBorda) {
   elInputBorda.addEventListener('change', updateBorda);
 }
 
-myReset.addEventListener('click', resetForm);
+btDarkmode.addEventListener('click', ativarDarkmode);
 submit.addEventListener('click', enviarForm);
 
-function resetForm() {
-  
-  
+function ativarDarkmode() {
+  document.body.classList.toggle('has--darkmode');
 }
 
 function enviarForm() {
