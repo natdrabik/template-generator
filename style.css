@@ -50,6 +50,12 @@ grid-template-columns: repeat(2, 1fr);
   justify-content: center;
 }
 
+#darkmode {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
 .largura {
   display: flex;
   grid-gap: 20px;
