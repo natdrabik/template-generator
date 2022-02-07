@@ -228,9 +228,10 @@ how to remove the virtical space around the range input in IE*/
   background: transparent;
   color: #000;
   text-transform: uppercase;
-  padding: 15px;
+  padding: 0 15px;
   cursor: pointer;
   transition: .5s;
+  line-height: 36px;
 }
 
 .btn:hover {
