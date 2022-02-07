@@ -127,6 +127,11 @@ input {
   padding: 15px;
 }
 
+input[type="color"] {
+  border: 0;
+  padding: 0;
+}
+
 .btn {
   border: 1px solid #000;
   background: transparent;
