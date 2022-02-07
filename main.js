@@ -22,7 +22,12 @@ for (elInputBorda of inputsBorda) {
 
 btDarkmode.addEventListener('click', ativarDarkmode);
 submit.addEventListener('click', enviarForm);
-reset.addEventListener('click', updateTemplate);
+reset.addEventListener('click', resetForm);
+
+function resetForm() {
+  document.getElementById('form').reset();
+  updateTemplate;
+}
 
 function ativarDarkmode() {
   document.body.classList.toggle('has--darkmode');
