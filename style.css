@@ -120,7 +120,7 @@ grid-template-columns: repeat(2, 1fr);
   
 }
 
-input {
+input, select {
   border: 1px solid #000;
   background: transparent;
   color: #000;
