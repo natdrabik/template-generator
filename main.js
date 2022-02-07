@@ -27,6 +27,7 @@ reset.addEventListener('click', resetForm);
 function resetForm() {
   document.getElementById('form').reset();
   updateTemplate;
+  
 }
 
 function ativarDarkmode() {
