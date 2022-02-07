@@ -120,6 +120,13 @@ grid-template-columns: repeat(2, 1fr);
   
 }
 
+input {
+  border: 1px solid #000;
+  background: transparent;
+  color: #000;
+  padding: 15px;
+}
+
 .btn {
   border: 1px solid #000;
   background: transparent;
@@ -127,6 +134,7 @@ grid-template-columns: repeat(2, 1fr);
   text-transform: uppercase;
   padding: 15px;
   cursor: pointer;
+  transition: .5s;
 }
 
 .btn:hover {
