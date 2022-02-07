@@ -138,13 +138,14 @@ input[type=range] {
   margin: 13.8px 0;
   background-color: transparent;
   -webkit-appearance: none;
+  border: 0;
 }
 input[type=range]:focus {
   outline: none;
 }
 input[type=range]::-webkit-slider-runnable-track {
   background: #c8c8c8;
-  border: 0.1px solid #010101;
+  border: 0;
   width: 100%;
   height: 8.4px;
   cursor: pointer;
@@ -154,7 +155,7 @@ input[type=range]::-webkit-slider-thumb {
   width: 16px;
   height: 36px;
   background: #000000;
-  border: 1px solid #000000;
+  border: 0;
   border-radius: 1px;
   cursor: pointer;
   -webkit-appearance: none;
