@@ -168,3 +168,9 @@ input[type="color"] {
   background: #ececec;
   color: #000;
 }
+
+.has--darkmode input,
+.has--darkmode select {
+  border: 1px solid #fff;
+  color: #fff;
+}
