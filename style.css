@@ -265,3 +265,16 @@ how to remove the virtical space around the range input in IE*/
   border: 1px solid #fff;
   color: #fff;
 }
+
+.has--darkmode input[type=range]::-webkit-slider-thumb {
+  background: #fff;
+}
+.has--darkmode input[type=range]::-moz-range-thumb {
+  background: #fff;
+}
+.has--darkmode input[type=range]::-ms-thumb {
+  background: #fff;
+  border: 1px solid #fff;
+  border-radius: 1px;
+}
+
