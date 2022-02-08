@@ -2,7 +2,7 @@ window.addEventListener('load', updateTemplate);
 
 var inputs = document.querySelectorAll('input');
 var selects = document.querySelectorAll('select');
-var reset = document.getElementById('reset');
+var reset = document.getElementById('myreset');
 var submit = document.getElementById('submit');
 var codigo = document.getElementById('codigo');
 var inputsBorda = document.querySelectorAll('.input_borda');
