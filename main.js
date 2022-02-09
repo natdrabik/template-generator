@@ -7,6 +7,7 @@ var submit = document.getElementById('submit');
 var codigo = document.getElementById('codigo');
 var inputsBorda = document.querySelectorAll('.input_borda');
 var btDarkmode = document.getElementById('darkmode');
+var copy = document.getElementById('copy');
 
 for (elInput of inputs) {
   elInput.addEventListener('change', updateTemplate);
@@ -23,6 +24,7 @@ for (elInputBorda of inputsBorda) {
 btDarkmode.addEventListener('click', ativarDarkmode);
 submit.addEventListener('click', enviarForm);
 reset.addEventListener('click', resetForm);
+copy.addEventListener('click', copiarTemplate);
 
 function resetForm() {
   document.getElementById('form').reset();
@@ -43,6 +45,18 @@ function updateBorda() {
   for (elInputBorda of inputsBorda) {
   elInputBorda.value = valorBorda;
 }
+}
+
+function copiarTemplate() {
+
+  codigo.select();
+  codigo.setSelectionRange(0, 99999); /* For mobile devices */
+
+  /* Copy the text inside the text field */
+  navigator.clipboard.writeText(codigo.value);
+  
+  /* Alert the copied text */
+  alert("Copied the text: " + codigo.value);
 }
 
 function updateTemplate() {
