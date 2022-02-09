@@ -82,5 +82,5 @@ var templateBox = document.getElementById('template');
 templateBox.innerHTML = templateHTML;
   codigo.innerHTML = templateHTML;
   
-  copy.reset();
+  copy.value = 'Copiar código';
 }
