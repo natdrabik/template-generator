@@ -81,4 +81,6 @@ var templateHTML = '' + fontStack + '<div style="' + styleBorda + '"><div style=
 var templateBox = document.getElementById('template');
 templateBox.innerHTML = templateHTML;
   codigo.innerHTML = templateHTML;
+  
+  copy.reset();
 }
