@@ -284,4 +284,7 @@ how to remove the virtical space around the range input in IE*/
   border: 1px solid #fff;
   border-radius: 1px;
 }
+.has--darkmode #codigo {
+  background: #333;
+}
 
