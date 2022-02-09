@@ -27,7 +27,8 @@ reset.addEventListener('click', resetForm);
 copy.addEventListener('click', copiarTemplate);
 
 function resetForm() {
-  document.getElementById('form').reset();
+//   document.getElementById('form').reset();
+  HTMLFormElement.reset();
   updateTemplate;
   
 }
