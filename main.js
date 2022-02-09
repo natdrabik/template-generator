@@ -55,7 +55,7 @@ function copiarTemplate() {
   /* Copy the text inside the text field */
   navigator.clipboard.writeText(codigo.value);
   
-  codigo.value = 'Copiado!'
+  copy.value = 'Copiado!'
 }
 
 function updateTemplate() {
