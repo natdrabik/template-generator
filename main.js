@@ -10,8 +10,6 @@ var btDarkmode = document.getElementById('darkmode');
 var copy = document.getElementById('copy');
 var darkmodeAtivo = btDarkmode.querySelector('input').checked;
 
-console.log(darkmodeAtivo);
-
 for (elInput of inputs) {
   elInput.addEventListener('change', updateTemplate);
 }
@@ -38,11 +36,13 @@ function resetForm() {
 function ativarDarkmode() {
   if (btDarkmode.querySelector('input').checked == true){
     document.body.classList.add('has--darkmode');
+    console.log(darkmodeAtivo);
   }
   else {
     document.body.classList.remove('has--darkmode');
+    console.log(darkmodeAtivo);
   }
-  console.log(darkmodeAtivo);
+  
 }
 
 function enviarForm() {
