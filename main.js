@@ -8,6 +8,7 @@ var codigo = document.getElementById('codigo');
 var inputsBorda = document.querySelectorAll('.input_borda');
 var btDarkmode = document.getElementById('darkmode');
 var copy = document.getElementById('copy');
+var darkmodeAtivo = btDarkmode.querySelector('input').checked;
 
 for (elInput of inputs) {
   elInput.addEventListener('change', updateTemplate);
@@ -27,14 +28,13 @@ reset.addEventListener('click', resetForm);
 copy.addEventListener('click', copiarTemplate);
 
 function resetForm() {
-//   document.getElementById('form').reset();
-  HTMLFormElement.reset();
+  document.getElementById('form').reset();
   updateTemplate;
-  
+  console.log(darkmodeAtivo);
 }
 
 function ativarDarkmode() {
-  if (btDarkmode.querySelector('input').checked == true){
+  if (darkmodeAtivo.checked == true){
     document.body.classList.add('has--darkmode');
   }
   else {
