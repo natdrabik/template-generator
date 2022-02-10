@@ -31,6 +31,7 @@ function resetForm() {
 //  document.getElementById('form').reset();
   updateTemplate;
   console.log(darkmodeAtivo);
+  ativarDarkmode;
 }
 
 function ativarDarkmode() {
