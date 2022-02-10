@@ -28,9 +28,11 @@ reset.addEventListener('click', resetForm);
 copy.addEventListener('click', copiarTemplate);
 
 function resetForm() {
-//  document.getElementById('form').reset();
+  event.preventDefault();
+  document.getElementById('form').reset();
   updateTemplate;
   console.log(darkmodeAtivo);
+  return false;
   ativarDarkmode;
 }
 
