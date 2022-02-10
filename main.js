@@ -34,7 +34,7 @@ function resetForm() {
 }
 
 function ativarDarkmode() {
-  if (darkmodeAtivo.checked == true){
+  if (darkmodeAtivo == true){
     document.body.classList.add('has--darkmode');
   }
   else {
