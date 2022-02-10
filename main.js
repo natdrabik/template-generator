@@ -35,7 +35,12 @@ function resetForm() {
 
 function ativarDarkmode() {
   console.log('darkmode');
-  document.body.classList.toggle('has--darkmode');
+  if (btDarkmode.checked == true){
+    document.body.classList.add('has--darkmode');
+  }
+  else {
+    document.body.classList.remove('has--darkmode');
+  }
 }
 
 function enviarForm() {
