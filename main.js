@@ -36,12 +36,13 @@ function resetForm() {
 }
 
 function ativarDarkmode() {
-  if (darkmodeAtivo === true){
+  if (btDarkmode.querySelector('input').checked == true){
     document.body.classList.add('has--darkmode');
   }
   else {
     document.body.classList.remove('has--darkmode');
   }
+  console.log(darkmodeAtivo);
 }
 
 function enviarForm() {
