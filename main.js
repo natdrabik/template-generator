@@ -34,8 +34,7 @@ function resetForm() {
 }
 
 function ativarDarkmode() {
-  console.log('darkmode');
-  if (btDarkmode.checked == true){
+  if (btDarkmode.querySelector('input').checked == true){
     document.body.classList.add('has--darkmode');
   }
   else {
