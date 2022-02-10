@@ -32,8 +32,10 @@ function resetForm() {
   document.getElementById('form').reset();
   updateTemplate;
   console.log(darkmodeAtivo);
-  return false;
+  // return false;
   ativarDarkmode;
+  var fundoCor = document.getElementById('fundoCor').value;
+  console.log(fundoCor);
 }
 
 function ativarDarkmode() {
