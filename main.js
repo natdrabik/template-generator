@@ -10,6 +10,8 @@ var btDarkmode = document.getElementById('darkmode');
 var copy = document.getElementById('copy');
 var darkmodeAtivo = btDarkmode.querySelector('input').checked;
 
+console.log(darkmodeAtivo);
+
 for (elInput of inputs) {
   elInput.addEventListener('change', updateTemplate);
 }
